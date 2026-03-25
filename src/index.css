@@ -5,12 +5,17 @@
   --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
 }
 
-html {
+html, body {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 section {
   scroll-margin-top: 4rem;
+  overflow-x: hidden;
 }
 
 body {

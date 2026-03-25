@@ -87,7 +87,7 @@ export default function App() {
   });
 
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-blue-100 selection:text-blue-900">
+    <div className="min-h-screen bg-slate-50 text-slate-900 selection:bg-blue-100 selection:text-blue-900 overflow-x-hidden">
       <Toaster position="top-center" richColors />
       
       {/* Skip to main content link */}
@@ -181,7 +181,7 @@ export default function App() {
               <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-6">
                 <ShieldCheck size={14} aria-hidden="true" /> Profesjonalne wsparcie IT
               </span>
-              <h1 className="text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
+              <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-white tracking-tight mb-6 leading-tight">
                 Usługi informatyczne <br className="hidden md:block" aria-hidden="true" />
                 dla małych i średnich firm
               </h1>
@@ -202,7 +202,7 @@ export default function App() {
         </section>
 
         {/* Services Section */}
-        <section id="uslugi" className="py-24 bg-white" aria-labelledby="services-title">
+        <section id="uslugi" className="py-24 bg-white overflow-hidden" aria-labelledby="services-title">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 id="services-title" className="text-3xl md:text-4xl font-bold text-slate-900 mb-4">W czym mogę Ci pomóc?</h2>
@@ -235,7 +235,7 @@ export default function App() {
         </section>
 
         {/* Payments Section */}
-        <section id="platnosci" className="py-24 bg-slate-50" aria-labelledby="payments-title">
+        <section id="platnosci" className="py-24 bg-slate-50 overflow-hidden" aria-labelledby="payments-title">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16 items-center">
               <div>
@@ -310,7 +310,7 @@ export default function App() {
         </section>
 
         {/* Contact Section */}
-        <section id="kontakt" className="py-24 bg-[#0a192f] text-white" aria-labelledby="contact-title">
+        <section id="kontakt" className="py-24 bg-[#0a192f] text-white overflow-hidden" aria-labelledby="contact-title">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-16">
               <div>
@@ -327,8 +327,8 @@ export default function App() {
                     </div>
                     <div>
                       <p className="text-sm text-slate-500 uppercase font-bold tracking-wider mb-1">E-mail</p>
-                      <div className="flex items-center gap-2">
-                        <a href="mailto:kamil.drzewiecki.biz@gmail.com" className="text-lg font-medium hover:text-blue-400 transition-colors">kamil.drzewiecki.biz@gmail.com</a>
+                      <div className="flex items-center gap-2 max-w-full overflow-hidden">
+                        <a href="mailto:kamil.drzewiecki.biz@gmail.com" className="text-lg font-medium hover:text-blue-400 transition-colors break-all">kamil.drzewiecki.biz@gmail.com</a>
                         <CopyButton text="kamil.drzewiecki.biz@gmail.com" label="E-mail" />
                       </div>
                     </div>
@@ -359,7 +359,7 @@ export default function App() {
         </section>
 
         {/* Legal Section */}
-        <section id="regulamin" className="py-24 bg-white" aria-labelledby="legal-title">
+        <section id="regulamin" className="py-24 bg-white overflow-hidden" aria-labelledby="legal-title">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
             <h2 id="legal-title" className="sr-only">Informacje prawne</h2>
             <div className="flex border-b border-slate-200 mb-12" role="tablist">
