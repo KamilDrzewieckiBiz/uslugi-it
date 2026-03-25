@@ -510,7 +510,7 @@ function ContactForm() {
 
       if (response.ok) {
         toast.success("Wiadomość została wysłana pomyślnie!", {
-          description: "Odezwię się do Ciebie tak szybko, jak to możliwe."
+          description: "Odezwę się do Ciebie tak szybko, jak to możliwe."
         });
         (e.target as HTMLFormElement).reset();
       } else {
